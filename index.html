@@ -19,9 +19,8 @@
         
         .logo { font-size: 28px; font-weight: bold; letter-spacing: 2px; }
 
-        /* Sección con Video - El texto MÁS ARRIBA */
+        /* Sección con Video - SIN recuadro de texto */
         .hero {
-            position: relative;
             width: 100%;
             overflow: hidden;
             background: #000;
@@ -33,27 +32,10 @@
             display: block;
             object-fit: contain;
         }
-        
-        .hero-overlay {
-            position: absolute;
-            top: 15%; /* 👈 Más arriba antes estaba al 50% */
-            left: 50%;
-            transform: translate(-50%, 0);
-            background: rgba(0, 0, 0, 0.55);
-            padding: 30px 25px;
-            border-radius: 12px;
-            text-align: center;
-            color: white;
-            max-width: 700px;
-            width: 90%;
-        }
-        
-        .hero h1 { font-size: 42px; margin-bottom: 12px; }
-        .hero p { font-size: 18px; }
 
-        /* Sección sobre nosotros - Más separada del video */
+        /* Sección sobre nosotros */
         .about {
-            padding: 50px 5%; /* 👈 Más espacio arriba */
+            padding: 60px 5%;
             text-align: center;
             max-width: 900px;
             margin: 0 auto;
@@ -78,19 +60,15 @@
         <div class="logo">✨ NOVA FASHION</div>
     </header>
 
-    <!-- Sección Principal con Video -->
+    <!-- Solo el video, sin texto encima -->
     <section class="hero">
-        <div class="hero-overlay">
-            <h1>Bienvenidos a Nova Fashion</h1>
-            <p>Tu estilo, tu elegancia. Descubre las últimas tendencias en moda.</p>
-        </div>
         <video autoplay muted loop playsinline>
             <source src="video-tienda.mp4" type="video/mp4">
             Tu navegador no soporta el video.
         </video>
     </section>
 
-    <!-- Información de la tienda - Más abajo del video -->
+    <!-- Información de la tienda abajo -->
     <section class="about">
         <h2>Sobre Nosotros</h2>
         <p>En <strong>Nova Fashion</strong> creemos que la ropa no es solo para vestir, sino para expresar quién eres. Ofrecemos prendas de calidad con diseños modernos y únicos. ¡Viste con confianza y brilla con nosotros!</p>
