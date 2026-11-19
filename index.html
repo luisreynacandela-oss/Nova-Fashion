@@ -55,7 +55,7 @@
         .animate-marquee-right {
             display: flex;
             width: max-content;
-            animation: marqueeMoveRight 30s linear infinite;
+            animation: marqueeMoveRight 32s linear infinite;
         }
 
         .animate-marquee-right:hover {
@@ -91,7 +91,7 @@
             <!-- Enlaces de navegación -->
             <nav class="hidden md:flex items-center space-x-8 text-xs tracking-[0.2em] font-light uppercase">
                 <a href="#catalogo" class="hover:text-gold-400 transition-colors duration-200">Catálogo</a>
-                <a href="#novedades" class="hover:text-gold-400 transition-colors duration-200">Colecciones</a>
+                <a href="#catalogo" class="hover:text-gold-400 transition-colors duration-200">Colecciones</a>
                 <a href="#cuadro-video" class="hover:text-gold-400 transition-colors duration-200">Video Promocional</a>
             </nav>
 
@@ -100,12 +100,12 @@
                 NOVA <span class="font-normal italic text-gold-400">FASHION</span>
             </a>
 
-            <!-- WhatsApp Directo & Control de Audio -->
+            <!-- WhatsApp Directo & Control de Audio Global -->
             <div class="flex items-center space-x-4 md:space-x-6 text-xs uppercase tracking-widest">
                 <a href="https://wa.me/51960865247?text=Hola%20Nova%20Fashion,%20deseo%20consultar%20el%20cat%C3%A1logo%20y%20disponibilidad%20de%20prendas." 
                    target="_blank" 
                    rel="noopener noreferrer"
-                   class="flex items-center space-x-2 border border-emerald-500/40 bg-emerald-950/30 text-emerald-400 hover:bg-emerald-500 hover:text-black rounded-full px-3 py-1.5 transition-all duration-300">
+                   class="flex items-center space-x-2 border border-emerald-500/40 bg-emerald-950/30 text-emerald-400 hover:bg-emerald-500 hover:text-black rounded-full px-3.5 py-1.5 transition-all duration-300">
                     <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                     </svg>
@@ -126,23 +126,23 @@
         </div>
     </header>
 
-    <!-- 2. SECCIÓN CATÁLOGO LIMPIO (SIN VIDEO DE FONDO) CON CARRUSEL DE PRENDAS HACIA LA DERECHA -->
+    <!-- 2. SECCIÓN CATÁLOGO LIMPIO (FONDO OSCURO EDITORIAL) -->
     <section id="catalogo" class="relative w-full pt-28 pb-20 px-4 sm:px-8 bg-zinc-950 overflow-hidden border-b border-zinc-900">
         
-        <!-- Degradado sutil de iluminación en el fondo (sin video) -->
-        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-zinc-900 via-zinc-950 to-zinc-950 opacity-80 pointer-events-none"></div>
+        <!-- Iluminación sutil de fondo radial -->
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-zinc-900 via-zinc-950 to-zinc-950 opacity-90 pointer-events-none"></div>
 
         <div class="relative z-20 max-w-7xl mx-auto">
             
             <div class="text-center max-w-3xl mx-auto mb-14 pt-4">
-                <span class="inline-block text-xs uppercase tracking-[0.4em] text-gold-400 mb-3 px-3 py-1 rounded-full border border-gold-400/30 bg-black/60 backdrop-blur-md">
+                <span class="inline-block text-xs uppercase tracking-[0.4em] text-gold-400 mb-3 px-3.5 py-1 rounded-full border border-gold-400/30 bg-black/60 backdrop-blur-md">
                     Colección Exclusiva 2026
                 </span>
                 <h1 class="text-4xl sm:text-6xl md:text-7xl font-serif font-light tracking-tight text-white mb-6 leading-none">
                     CATÁLOGO <span class="italic text-gold-400 font-normal">NOVA FASHION</span>
                 </h1>
                 <p class="text-zinc-300 text-sm sm:text-base font-light max-w-xl mx-auto leading-relaxed">
-                    Viste tu estilo, marca la diferencia. Explora nuestras prendas exclusivas presentadas en movimiento continuo.
+                    Viste tu estilo, marca la diferencia. Explora nuestras prendas exclusivas presentadas en videos dinámicos con movimiento continuo.
                 </p>
 
                 <!-- BOTONES DE FILTRO EN ESPAÑOL -->
@@ -154,21 +154,23 @@
                 </div>
             </div>
 
-            <!-- CARRUSEL INFINITO DE TARJETAS EN MOVIMIENTO HACIA LA DERECHA (CON VIDEO PROPIO POR TARJETA) -->
+            <!-- CARRUSEL INFINITO DE 4 TARJETAS CON VIDEO EN MOVIMIENTO HACIA LA DERECHA -->
             <div class="relative w-full overflow-hidden py-4">
+                <!-- Sombra lateral sutil -->
                 <div class="absolute top-0 bottom-0 left-0 w-16 bg-gradient-to-r from-zinc-950 to-transparent z-30 pointer-events-none"></div>
                 <div class="absolute top-0 bottom-0 right-0 w-16 bg-gradient-to-l from-zinc-950 to-transparent z-30 pointer-events-none"></div>
 
                 <div id="marqueeTrackContainer" class="animate-marquee-right space-x-6">
                     
-                    <!-- BLOQUE 1 DE TARJETAS EN VIDEO -->
+                    <!-- BLOQUE 1: LAS 4 PRENDAS EN VIDEO -->
                     <div class="marquee-block flex space-x-6">
                         
-                        <!-- Tarjeta 1 -->
+                        <!-- TARJETA 1 DE 4: video-ropa-1.mp4 -->
                         <div data-category="alta-costura" class="product-card w-72 sm:w-80 group relative rounded-2xl overflow-hidden glass-panel border border-white/10 hover:border-gold-400/50 transition-all duration-500 flex flex-col justify-between shrink-0 shadow-2xl">
                             <div class="relative aspect-[3/4] overflow-hidden bg-zinc-900">
+                                <!-- VIDEO PRENDA 1 -->
                                 <video class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" autoplay loop muted playsinline>
-                                    <source src="./video-tienda.mp4" type="video/mp4">
+                                    <source src="./video-ropa-1.mp4" type="video/mp4">
                                 </video>
                                 <div class="absolute top-3 left-3 bg-black/80 backdrop-blur-md px-3 py-1 text-[10px] uppercase tracking-widest text-gold-400 border border-gold-400/30 rounded-full font-medium">
                                     ALTA COSTURA
@@ -188,11 +190,12 @@
                             </div>
                         </div>
 
-                        <!-- Tarjeta 2 -->
+                        <!-- TARJETA 2 DE 4: video-ropa-2.mp4 -->
                         <div data-category="edicion-limitada" class="product-card w-72 sm:w-80 group relative rounded-2xl overflow-hidden glass-panel border border-white/10 hover:border-gold-400/50 transition-all duration-500 flex flex-col justify-between shrink-0 shadow-2xl">
                             <div class="relative aspect-[3/4] overflow-hidden bg-zinc-900">
+                                <!-- VIDEO PRENDA 2 -->
                                 <video class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" autoplay loop muted playsinline>
-                                    <source src="./video-tienda.mp4" type="video/mp4">
+                                    <source src="./video-ropa-2.mp4" type="video/mp4">
                                 </video>
                                 <div class="absolute top-3 left-3 bg-black/80 backdrop-blur-md px-3 py-1 text-[10px] uppercase tracking-widest text-zinc-300 border border-white/20 rounded-full font-medium">
                                     EDICIÓN LIMITADA
@@ -212,11 +215,12 @@
                             </div>
                         </div>
 
-                        <!-- Tarjeta 3 -->
+                        <!-- TARJETA 3 DE 4: video-ropa-3.mp4 -->
                         <div data-category="lujo-urbano" class="product-card w-72 sm:w-80 group relative rounded-2xl overflow-hidden glass-panel border border-white/10 hover:border-gold-400/50 transition-all duration-500 flex flex-col justify-between shrink-0 shadow-2xl">
                             <div class="relative aspect-[3/4] overflow-hidden bg-zinc-900">
+                                <!-- VIDEO PRENDA 3 -->
                                 <video class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" autoplay loop muted playsinline>
-                                    <source src="./video-tienda.mp4" type="video/mp4">
+                                    <source src="./video-ropa-3.mp4" type="video/mp4">
                                 </video>
                                 <div class="absolute top-3 left-3 bg-black/80 backdrop-blur-md px-3 py-1 text-[10px] uppercase tracking-widest text-gold-400 border border-gold-400/30 rounded-full font-medium">
                                     LUJO URBANO
@@ -236,11 +240,12 @@
                             </div>
                         </div>
 
-                        <!-- Tarjeta 4 -->
+                        <!-- TARJETA 4 DE 4: video-ropa-4.mp4 -->
                         <div data-category="lujo-urbano" class="product-card w-72 sm:w-80 group relative rounded-2xl overflow-hidden glass-panel border border-white/10 hover:border-gold-400/50 transition-all duration-500 flex flex-col justify-between shrink-0 shadow-2xl">
                             <div class="relative aspect-[3/4] overflow-hidden bg-zinc-900">
+                                <!-- VIDEO PRENDA 4 -->
                                 <video class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" autoplay loop muted playsinline>
-                                    <source src="./video-tienda.mp4" type="video/mp4">
+                                    <source src="./video-ropa-4.mp4" type="video/mp4">
                                 </video>
                                 <div class="absolute top-3 left-3 bg-black/80 backdrop-blur-md px-3 py-1 text-[10px] uppercase tracking-widest text-zinc-300 border border-white/20 rounded-full font-medium">
                                     LUJO URBANO
@@ -262,13 +267,14 @@
 
                     </div>
 
-                    <!-- BLOQUE DUPLICADO PARA EFECTO CONTINUO DE MARQUEE -->
+                    <!-- BLOQUE 2: DUPLICADO PARA EFECTO MARQUEE INFINITO CONTINUO -->
                     <div class="marquee-block flex space-x-6">
                         
+                        <!-- TARJETA 1 DUPLICADA -->
                         <div data-category="alta-costura" class="product-card w-72 sm:w-80 group relative rounded-2xl overflow-hidden glass-panel border border-white/10 hover:border-gold-400/50 transition-all duration-500 flex flex-col justify-between shrink-0 shadow-2xl">
                             <div class="relative aspect-[3/4] overflow-hidden bg-zinc-900">
                                 <video class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" autoplay loop muted playsinline>
-                                    <source src="./video-tienda.mp4" type="video/mp4">
+                                    <source src="./video-ropa-1.mp4" type="video/mp4">
                                 </video>
                                 <div class="absolute top-3 left-3 bg-black/80 backdrop-blur-md px-3 py-1 text-[10px] uppercase tracking-widest text-gold-400 border border-gold-400/30 rounded-full font-medium">
                                     ALTA COSTURA
@@ -284,10 +290,11 @@
                             </div>
                         </div>
 
+                        <!-- TARJETA 2 DUPLICADA -->
                         <div data-category="edicion-limitada" class="product-card w-72 sm:w-80 group relative rounded-2xl overflow-hidden glass-panel border border-white/10 hover:border-gold-400/50 transition-all duration-500 flex flex-col justify-between shrink-0 shadow-2xl">
                             <div class="relative aspect-[3/4] overflow-hidden bg-zinc-900">
                                 <video class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" autoplay loop muted playsinline>
-                                    <source src="./video-tienda.mp4" type="video/mp4">
+                                    <source src="./video-ropa-2.mp4" type="video/mp4">
                                 </video>
                                 <div class="absolute top-3 left-3 bg-black/80 backdrop-blur-md px-3 py-1 text-[10px] uppercase tracking-widest text-zinc-300 border border-white/20 rounded-full font-medium">
                                     EDICIÓN LIMITADA
@@ -303,10 +310,11 @@
                             </div>
                         </div>
 
+                        <!-- TARJETA 3 DUPLICADA -->
                         <div data-category="lujo-urbano" class="product-card w-72 sm:w-80 group relative rounded-2xl overflow-hidden glass-panel border border-white/10 hover:border-gold-400/50 transition-all duration-500 flex flex-col justify-between shrink-0 shadow-2xl">
                             <div class="relative aspect-[3/4] overflow-hidden bg-zinc-900">
                                 <video class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" autoplay loop muted playsinline>
-                                    <source src="./video-tienda.mp4" type="video/mp4">
+                                    <source src="./video-ropa-3.mp4" type="video/mp4">
                                 </video>
                                 <div class="absolute top-3 left-3 bg-black/80 backdrop-blur-md px-3 py-1 text-[10px] uppercase tracking-widest text-gold-400 border border-gold-400/30 rounded-full font-medium">
                                     LUJO URBANO
@@ -322,10 +330,11 @@
                             </div>
                         </div>
 
+                        <!-- TARJETA 4 DUPLICADA -->
                         <div data-category="lujo-urbano" class="product-card w-72 sm:w-80 group relative rounded-2xl overflow-hidden glass-panel border border-white/10 hover:border-gold-400/50 transition-all duration-500 flex flex-col justify-between shrink-0 shadow-2xl">
                             <div class="relative aspect-[3/4] overflow-hidden bg-zinc-900">
                                 <video class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" autoplay loop muted playsinline>
-                                    <source src="./video-tienda.mp4" type="video/mp4">
+                                    <source src="./video-ropa-4.mp4" type="video/mp4">
                                 </video>
                                 <div class="absolute top-3 left-3 bg-black/80 backdrop-blur-md px-3 py-1 text-[10px] uppercase tracking-widest text-zinc-300 border border-white/20 rounded-full font-medium">
                                     LUJO URBANO
@@ -362,7 +371,7 @@
         </div>
     </section>
 
-    <!-- 3. CUADRO PROMINENTE DEL VIDEO COMPLETO CON AUDIO (PARTE INFERIOR) -->
+    <!-- 3. CUADRO PROMINENTE DEL VIDEO COMPLETO CON AUDIO (EN LA PARTE INFERIOR) -->
     <section id="cuadro-video" class="relative w-full py-20 px-4 sm:px-8 bg-black">
         <div class="max-w-5xl mx-auto">
             
@@ -374,11 +383,11 @@
                     VIDEO PROMOCIONAL <span class="italic text-gold-400">NOVA FASHION</span>
                 </h2>
                 <p class="text-zinc-400 text-xs sm:text-sm mt-3 font-light max-w-lg mx-auto">
-                    Disfruta de la experiencia completa con sonido estéreo HD y reproducción ininterrumpida.
+                    Disfruta de la experiencia completa con sonido estéreo HD y reproducción en alta resolución.
                 </p>
             </div>
 
-            <!-- EL CUADRO PROMINENTE DEL VIDEO COMPLETO -->
+            <!-- EL CUADRO PROMINENTE DEL VIDEO COMPLETO (video-tienda.mp4) -->
             <div class="relative rounded-3xl border-2 border-gold-400/40 bg-zinc-900 p-3 sm:p-6 shadow-[0_0_50px_rgba(212,175,55,0.15)] overflow-hidden">
                 
                 <!-- Encabezado del marco del video -->
@@ -399,18 +408,13 @@
                 <!-- CONTENEDOR DEL REPRODUCTOR DE VIDEO COMPLETO -->
                 <div class="relative aspect-video w-full rounded-2xl overflow-hidden bg-black shadow-2xl group">
                     
-                    <!-- REPRODUCTOR DE VIDEO 1 (video-tienda.mp4) -->
-                    <!-- 
-                       INSTRUCCIONES PARA AÑADIR MÁS VIDEOS:
-                       Si deseas subir más videos (ej. ./video-2.mp4, ./video-3.mp4), 
-                       puedes agregarlos dentro del contenedor o cambiar el atributo src abajo.
-                    -->
+                    <!-- REPRODUCTOR DEL VIDEO COMPLETO: ./video-tienda.mp4 -->
                     <video id="fullStoreVideo" class="w-full h-full object-cover" autoplay loop playsinline>
                         <source src="./video-tienda.mp4" type="video/mp4">
-                        Tu navegador no soporta el formato de video.
+                        Tu navegador no soporta la reproducción de video.
                     </video>
 
-                    <!-- Velo interactivo con barra superior de estado -->
+                    <!-- Etiqueta decorativa superior -->
                     <div class="absolute top-4 left-4 z-20 bg-black/70 backdrop-blur-md border border-white/10 px-3 py-1.5 rounded-full flex items-center space-x-2 text-[11px]">
                         <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
                         <span class="text-gold-400 font-serif">NOVA FASHION</span>
@@ -423,7 +427,7 @@
                             🔊
                         </div>
                         <h3 class="text-2xl font-serif text-white font-medium mb-1">Haz Clic para Activar Sonido</h3>
-                        <p class="text-xs text-zinc-300 font-light max-w-xs">Haz un toque en cualquier lugar para reproducir el video con audio estéreo completo.</p>
+                        <p class="text-xs text-zinc-300 font-light max-w-xs">Haz un toque en la pantalla para escuchar el video promocional con audio estéreo.</p>
                     </div>
 
                     <!-- BARRA INFERIOR DE CONTROLES DEL CUADRO DE VIDEO -->
@@ -445,14 +449,10 @@
                                 <span id="videoTimer" class="font-mono text-zinc-300 text-[11px]">00:00 / 00:00</span>
                             </div>
 
-                            <!-- Selector rápido de videos (Si agregas video-2.mp4 o video-3.mp4) -->
+                            <!-- Selector rápido de videos (si deseas agregar más videos en el futuro) -->
                             <div class="flex items-center space-x-2 text-[11px]">
-                                <span class="text-zinc-400 hidden sm:inline">Videos:</span>
-                                <button data-video="./video-tienda.mp4" class="video-switch-btn bg-gold-400 text-black px-3 py-1 rounded-full font-medium">Video 1</button>
-                                <!--
-                                <button data-video="./video-2.mp4" class="video-switch-btn bg-black/60 text-zinc-300 border border-white/20 px-3 py-1 rounded-full hover:border-gold-400">Video 2</button>
-                                <button data-video="./video-3.mp4" class="video-switch-btn bg-black/60 text-zinc-300 border border-white/20 px-3 py-1 rounded-full hover:border-gold-400">Video 3</button>
-                                -->
+                                <span class="text-zinc-400 hidden sm:inline">Spot:</span>
+                                <button data-video="./video-tienda.mp4" class="video-switch-btn bg-gold-400 text-black px-3 py-1 rounded-full font-medium">Spot 1</button>
                             </div>
                         </div>
 
@@ -460,10 +460,10 @@
 
                 </div>
 
-                <!-- Footer del cuadro del video -->
+                <!-- Pie del cuadro del video -->
                 <div class="mt-4 pt-3 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs text-zinc-400 gap-2">
                     <p class="font-light">"La moda es una forma de expresión — Viste tu estilo, marca la diferencia."</p>
-                    <a href="https://wa.me/51960865247?text=Hola%20Nova%20Fashion,%20vi%20el%20video%20completo%20y%20deseo%20hacer%20un%20pedido." 
+                    <a href="https://wa.me/51960865247?text=Hola%20Nova%20Fashion,%20vi%20el%20video%20promocional%20y%20deseo%20hacer%20un%20pedido." 
                        target="_blank"
                        class="text-gold-400 hover:text-white font-medium uppercase tracking-wider">
                         Pedir prendas por WhatsApp →
@@ -518,7 +518,7 @@
         </svg>
     </a>
 
-    <!-- 4. LÓGICA JAVASCRIPT -->
+    <!-- 4. LÓGICA JAVASCRIPT COMPLETA -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             
@@ -642,7 +642,7 @@
                 }
             });
 
-            // Cambio de videos si agregas más en el futuro
+            // Cambio de videos si se agregan más en el futuro
             document.querySelectorAll('.video-switch-btn').forEach(btn => {
                 btn.addEventListener('click', () => {
                     const newVideoSrc = btn.getAttribute('data-video');
